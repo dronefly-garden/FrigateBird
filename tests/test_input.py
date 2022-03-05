@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 
 import pytest
-from ebird_stuff.ebird.input_parsing import banding_code_parse as bcp
-from ebird_stuff.ebird.input_parsing import ebird_taxonomy_parse as etp
+from frigatebird.ebird.input_parsing import banding_code_parse as bcp
+from frigatebird.ebird.input_parsing import ebird_taxonomy_parse as etp
 
 # Find the path of the script. Inputs should be in ./test-files/ from it
 test_path = Path(__file__).parent / Path("test-files")

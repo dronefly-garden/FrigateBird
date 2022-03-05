@@ -4,14 +4,14 @@ from pprint import pprint
 import pytest
 import os
 
-import ebird_stuff.ml.api as mlp
-from ebird_stuff.ml.session import get_nc, head_nc
+import frigatebird.ml.api as mlp
+from frigatebird.ml.session import get_nc, head_nc
 
 # Don't use caching  for the tests, as requests-cache and vcr.py con
 @pytest.fixture(scope="function", autouse=True)
 def no_cache(monkeypatch):
-    monkeypatch.setattr("ebird_stuff.ml.api.get", get_nc)
-    monkeypatch.setattr("ebird_stuff.ml.api.head", head_nc)
+    monkeypatch.setattr("frigatebird.ml.api.get", get_nc)
+    monkeypatch.setattr("frigatebird.ml.api.head", head_nc)
 
 
 class TestUrls:

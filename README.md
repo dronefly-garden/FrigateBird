@@ -1,4 +1,4 @@
-# ebird_stuff
+# FrigateBird
 
 The eventual home of a bunch of stuff for interacting with eBird and ML. Code considered to be alpha quality.
 
@@ -7,6 +7,8 @@ Currently, there's the beginnings of an API for the [Macaulay Library](https://w
 By default `requests-cache` is set up for caching to `api_cache/` directory using the filesystem backend, because this was the easiest, and SQLite is slow at storing files.
 
 Logs go to the `logs/` directory.
+
+Temporary name, maybe?
 
 ## Requirements
 
