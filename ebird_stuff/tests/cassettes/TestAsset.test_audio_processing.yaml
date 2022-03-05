@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+    method: GET
+    uri: https://search.macaulaylibrary.org/catalog.json?catId=123456789&cap=all
+  response:
+    body:
+      string: "{\n  \"results\" : {\n    \"count\": 0,\n
+        \   \"content\" : [ {\n      \"catalogId\" : \"123456789\", \"mediaUrl\"
+        : \"https://cdn.download.ams.birds.cornell.edu/api/v1/asset/123456789/audio\",\n
+        \"mediaType\" : \"Audio\"\n} ]  }\n}"
+    headers:
+      Expires:
+      - '0'
+    status:
+      code: 200
+      message: ''
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+    method: GET
+    uri: https://cdn.download.ams.birds.cornell.edu/api/v1/asset/123456789/audio
+  response:
+    body:
+      string: '[{"errorMsg":"123456789 (audio) is not yet available for download.
+        Please try again later.","errorCode":"not_yet_available"}]'
+    headers:
+      Status:
+      - '476'
+    status:
+      code: 476
+      message: Unknown
+version: 1

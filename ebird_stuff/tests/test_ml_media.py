@@ -86,7 +86,7 @@ class TestAsset:
     @pytest.mark.vcr("new")
     def test_audio_processing(self):
         with pytest.raises(mlp.APIBase.MediaStillProcessing):
-            test_asset = self.mls.search_asset(asset_id=368985981)
+            test_asset = self.mls.search_asset(asset_id=123456789)
             _ = test_asset.media
 
     @pytest.mark.vcr("new")
